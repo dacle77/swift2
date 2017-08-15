@@ -1,0 +1,7 @@
+Google API key = 
+
+AIzaSyDv0bchMhumb8JTe5DpXcEV4H9AI2xis-w
+
+https://www.googleapis.com/blogger/v3/blogs/10861780?key=AIzaSyDv0bchMhumb8JTe5DpXcEV4H9AI2xis-w
+
+https://www.googleapis.com/blogger/v3/blogs/10861780/posts/?key=AIzaSyDv0bchMhumb8JTe5DpXcEV4H9AI2xis-w

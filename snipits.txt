@@ -1,0 +1,4 @@
+
+// show view hierarchy
+
+expr -l objc++ -O -- [[[UIWindow keyWindow] rootViewController] _printHierarchy]

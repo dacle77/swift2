@@ -1,0 +1,72 @@
+
+
+// Install Node.JS
+
+  Download from there site and install
+
+//  Download Parse Dashboard
+
+$ sudo npm install -g parse-dashboard
+
+//  Open Parse DashBoard
+
+$ —appId 64g65h46d5gf4j65d4hj4jdghjfghjjkf5ghsdryh --masterKey kjadnfgjklsdfgh56xsfgh4s8fg7h51sdf23gh16s4fgh513s21fdh9 --serverURL "https://ancient-stream-55491.herokuapp.com/parse"
+
+
+// Home Brew commands 
+
+cd `brew --prefix`
+git checkout master
+git ls-files -z | pbcopy
+rm -rf Cellar
+bin/brew prune
+pbpaste | xargs -0 rm
+rm -r Library/Homebrew Library/Aliases Library/Formula Library/Contributions 
+test -d Library/LinkedKegs && rm -r Library/LinkedKegs
+rmdir -p bin Library share/man/man1 2> /dev/null
+rm -rf .git
+rm -rf ~/Library/Caches/Homebrew
+rm -rf ~/Library/Logs/Homebrew
+rm -rf /Library/Caches/Homebrew
+
+
+
+
+
+
+Edit path in Mac OS X 10.11 El Capitan
+19/01/2016 by Pieter Kubben | Filed in Technology | No comments
+A short “note to self” that you may find useful too. You can edit the $PATH variable in Mac OS 10.11 El Capitan by modifying the .bash_profile file in your home directory. It’s easy: open Terminal and enter
+
+
+1
+open .bash_profile
+to open the file in your predefined editor. Alternatively you can use vim or nano like:
+
+
+1
+2
+3
+4
+5
+# Open with vim
+vim .bash_profile
+ 
+# Open with nano
+nano .bash_profile
+The last thing you need to do after editing (and saving) the file, is to reload it:
+
+
+1
+source .bash_profile
+This saves you the effort of logging out and back in. That’s all!
+
+
+if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash ]; then
+    . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+fi
+
+source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+
+#shell prompt example
+PS1='\u $(__git_ps1 "(%s)")\$ '

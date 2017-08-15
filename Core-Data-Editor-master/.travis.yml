@@ -1,0 +1,6 @@
+language: objective-c
+osx_image: xcode61
+before_install:
+    - brew update
+    - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
+script: xcodebuild -workspace CDE-Workspace.xcworkspace -scheme CDETests test
